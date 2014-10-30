@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="user.name">
+		<field-validator type="requiredstring">
+			<message>用户名不能为空</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="regex"><![CDATA[([a-zA-Z]{4,20}|[\u4e00-\u9fa5]{1,10})]]></param>
+			<message>用户名必须为4~20位英文字母或十位以内中文</message>
+		</field-validator>
+	</field>
+	
+	<field name="user.tel">
+	<field-validator type="requiredstring">
+			<message>手机号码不能为空</message>
+		</field-validator>
+         <field-validator type="regex">
+             <param name="regex"><![CDATA[(1[358]\d{9})]]></param>
+         	<message>手机号码格式不对</message>
+         </field-validator>
+     </field>
+     
+     <field name="user.email">
+		<field-validator type="requiredstring">
+			<message>email不能为空</message>
+		</field-validator>
+		<field-validator type="email">
+			<message>email地址格式不对</message>
+		</field-validator>
+	</field>
+	
+</validators>

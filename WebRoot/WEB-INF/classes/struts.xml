@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user" extends="struts-default" >
+	
+		<action name="register" class="action.user.UserAction" method="addUser">
+			<result name="success">/view/user/register/registersuccess.jsp</result>
+			<result name="error">/view/user/register/registerfail.jsp</result>
+			<result name="input">/view/user/register/register.jsp</result>
+		</action>
+		
+		<action name="login" class="action.user.UserAction" method="login">
+			<result name="success">/view/user/login/loginsuccess.jsp</result>
+			<result name="error">/view/user/login/loginfail.jsp</result>
+			<result name="input">/view/user/login/login.jsp</result>
+		</action>
+		
+		<action name="query" class="action.user.UserAction" method="query">
+			<result name="success">/view/user/query.jsp</result>
+		</action>
+		
+		<action name="logoff" class="action.user.UserAction" method="logoff">
+			<result name="success">/view/user/logoff/logoffsuccess.jsp</result>
+		</action>
+		
+		
+		<action name="destroy" class="action.user.UserAction" method="destroy">
+			<result name="success">/view/user/destroy/destroysuccess.jsp</result>
+		</action>
+		
+		<action name="edit" class="action.user.UserAction" method="edit">
+			<result name="success">/view/user/edit/edit.jsp</result>
+		</action>
+		
+		
+		<action name="update" class="action.user.UserAction" method="update">
+			<result name="success">/view/user/edit/update.jsp</result>
+			<result name="input">/view/user/edit/edit.jsp</result>
+		</action>
+		
+		<action name="changepass" class="action.user.UserAction" method="changepass">
+			<result name="success">/view/user/changepass/changepassright.jsp</result>
+			<result name="error">/view/user/changepass/changepasswrongl.jsp</result>
+			<result name="input">/view/user/changepass/changepass.jsp</result>
+		</action>
+		
+	</package>
+	
+	<package name="account" extends="struts-default" >
+	
+		<action name="addMoney" class="action.account.AccountAction" method="addMoney">
+			<result name="success">/view/account/addmoney/addmoneysuccess.jsp</result>
+			<result name="input">/view/account/addmoney/addmoney.jsp</result>
+		</action>
+		
+		<action name="reduceMoney" class="action.account.AccountAction" method="reduceMoney">
+			<result name="success">/view/account/reducemoney/reducemoneysuccess.jsp</result>
+			<result name="error">/view/account/reducemoney/reducemoneyfail.jsp</result>
+			<result name="input">/view/account/reducemoney/reducemoney.jsp</result>
+		</action>
+		
+		<action name="sort" class="action.account.AccountAction" method="sort">
+			<result name="success">/view/account/sort.jsp</result>
+		</action>
+		
+	</package>
+</struts>

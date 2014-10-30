@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+
+	 <validator type="double">
+        <param name="fieldName">money</param>
+        <param name="minInclusive">0.0</param>
+        <message>数目太小</message>
+    </validator>
+
+<!--  
+	<field name="money">
+		<field-validator type="double">
+              <param name="min">20</param>
+              <param name="max">50</param>
+              <message>money needs to be between ${min} and ${max}</message>
+          </field-validator>
+	</field>	
+-->		
+</validators>

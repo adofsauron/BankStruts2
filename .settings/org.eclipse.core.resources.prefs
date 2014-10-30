@@ -1,0 +1,15 @@
+#Mon Aug 05 15:31:12 CST 2013
+eclipse.preferences.version=1
+encoding//WebRoot/view/account/addmoney/addmoney.jsp=UTF-8
+encoding//WebRoot/view/account/addmoney/addmoneysuccess.jsp=UTF-8
+encoding//WebRoot/view/account/reducemoney/reducemoney.jsp=UTF-8
+encoding//WebRoot/view/account/reducemoney/reducemoneyfail.jsp=UTF-8
+encoding//WebRoot/view/account/reducemoney/reducemoneysuccess.jsp=UTF-8
+encoding//WebRoot/view/index.jsp=UTF-8
+encoding//WebRoot/view/option.jsp=UTF-8
+encoding//WebRoot/view/user/login/loginfail.jsp=UTF-8
+encoding//WebRoot/view/user/login/loginsuccess.jsp=UTF-8
+encoding//WebRoot/view/user/register/registerfail.jsp=UTF-8
+encoding//WebRoot/view/user/register/registersuccess.jsp=UTF-8
+encoding//src/service/Test.java=UTF-8
+encoding/<project>=UTF-8
